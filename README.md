@@ -8,9 +8,16 @@ I have created 4 notebooks
 
 2. capstone_eda for visualization
 - plotted for macroecnomic factors
+- more visualizations to be added
 
 3. capstone_feature_engineering
-- added macroeconomic factors and distances from points of interest as features (completed)
+- added macroeconomic factors as features (completed)
+- added distances from points of interest as features (completed)
 
 4. capstone_modeling for modeling
 - facing some problem with the keras due to tensorflow (moving to colab to try out)
+
+
+Outstanding Issues
+- keras/tensorflow problem (moving to colab to try out)
+- unable to upload the combined datasets to github due to file size limitation
