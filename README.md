@@ -18,6 +18,17 @@ I have created 4 notebooks
 - facing some problem with the keras due to tensorflow (moving to colab to try out)
 
 
+Datasets
+1. datasets/input
+- raw data files
+
+2. datasets/output folder
+- for processed data files after cleaning
+
+3. datasets/final
+- for datasets with features added
+- due to github's file size limitation the combined file has been uploaded in zip format
+
 Outstanding Issues
 - keras/tensorflow problem (moving to colab to try out)
-- unable to upload the combined datasets to github due to file size limitation
+
