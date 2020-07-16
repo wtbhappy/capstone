@@ -13,4 +13,4 @@ I have created 4 notebooks
 - added macroeconomic factors and distances from points of interest as features (completed)
 
 4. capstone_modeling for modeling
-- facing some problem with the keras due to tensorflow
+- facing some problem with the keras due to tensorflow (moving to colab to try out)
