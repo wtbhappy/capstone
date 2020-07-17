@@ -1,4 +1,12 @@
-# capstone
+# Problem Statement
+
+For most people, purchasing a property is their biggest investment and so it is important for buyers to know if they can afford the downpayment and the mortage payment. In Singapore, the government gives generous subsidies for first-time home buyers of public housing flats built by Housing and Development Board (HDB). Singaporeans that meet the criteria (there is an income ceiling) took advantage of this policy to own their homes, resulted in 80% of the residents living in HDB flats.
+The private property market is for local high income earners and HDB flat upgraders. Many foreigners also see Singapore as a safe haven to park thier monies here.
+The price of a property is determined by many factors. Beside the condition, size and location of the house, it is also affected by the state of the economy, government policy and supply and demand.
+I will compare different regression models to predict the prices of HDB flats, based on the propertys' attributes, their proximity to points of interest, market supply and demand and macroeconomic factors. 
+I will be using RMSE to measure model performance, and the model should at least improve upon baseline by 10%. Baseline will be the RMSE from Ordinary Least Square.
+
+# Summary
 A. Notebooks
 
 I have created 4 notebooks 
