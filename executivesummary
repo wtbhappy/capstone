@@ -1,0 +1,16 @@
+Introduction
+For most people, purchasing a property is their biggest investment and so it is important for buyers to know if they can afford the downpayment and the mortage payment. In Singapore, the government gives generous subsidies (grants) for first-time buyers of public housing flats and most people use their mandatory saving fund (known as CPF) to pay for the properties. These flats were built by a government agency known as Housing and Development Board (HDB) and so locals refer to these properties as HDB flats.
+
+Singaporeans that meet the criteria (income ceiling) take advantage of this policy to own their homes, resulted in 80% of the residents living in HDB flats. They either buy newly built flats directly from the government, which require them to wait for a few years, or pick a ready-built flat from the resale market.
+
+The goal of this project is to predict the prices of HDB resale flats. The price of a property is determined by many factors, such as its condition, level, size and location. It is also affected by the current state of the economy, government policies and supply and demand. 
+
+I have started with a Ordinary Least Square Linear Regression Model to give me the baseline, and explored Keras and XGBoost. I chose XGBoost  compared different regression models, guided by RMSE, to come up with one with the least amount of prediction errors and is able to generalize well across training, validation and test data.
+
+The data 
+
+What is your goal?
+Where did you get your data?
+What are your metrics?
+What were your findings?
+What risks/limitations/assumptions affect these findings?
