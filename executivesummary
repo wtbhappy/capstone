@@ -7,7 +7,7 @@ The goal of this project is to predict the prices of HDB resale flats. The price
 
 I have started with a Ordinary Least Square Linear Regression Model to give me the baseline, and explored Keras and XGBoost. I chose XGBoost  compared different regression models, guided by RMSE, to come up with one with the least amount of prediction errors and is able to generalize well across training, validation and test data.
 
-The data 
+The data came from various sources
 
 What is your goal?
 Where did you get your data?
