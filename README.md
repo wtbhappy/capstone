@@ -51,4 +51,7 @@ Due to the file sizes, I uploadded them to gogole drive at https://drive.google.
 D. Deployed Price Predictor
 https://hdbprice.herokuapp.com/
 
+E. Blog at Wordpress
+https://datascience250122858.wordpress.com/2020/08/05/predict-the-price-of-hdb-flat/
+
 
