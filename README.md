@@ -1,46 +1,54 @@
-# Problem Statement
+# File Organization
 
-For most people, purchasing a property is their biggest investment and so it is important for buyers to know if they can afford the downpayment and the mortage payment. In Singapore, the government gives generous subsidies for first-time home buyers of public housing flats built by Housing and Development Board (HDB). Singaporeans that meet the criteria (there is an income ceiling) took advantage of this policy to own their homes, resulted in 80% of the residents living in HDB flats.
-The private property market is for local high income earners and HDB flat upgraders. Many foreigners also see Singapore as a safe haven to park thier monies here.
-The price of a property is determined by many factors. Beside the condition, size and location of the house, it is also affected by the state of the economy, government policy and supply and demand.
-I will compare different regression models to predict the prices of HDB flats, based on the propertys' attributes, their proximity to points of interest, market supply and demand and macroeconomic factors. 
-I will be using RMSE to measure model performance, and the model should at least improve upon baseline by 10%. Baseline will be the RMSE from Ordinary Least Square.
+A. File structure
+- codes
+- datasets\input      (all raw files came here first)
+- datasets\poi        (cleaned/processed data of points of interest)  
+- datasets\macro      (cleaned/processed data of macro data)
+- datasets\hdb        (cleaned/processed data of flats)
+- datasets\combined   (combined data of flats, points of interest and macro)
+- datasets\final      (final datasets before modeling)
+- datasets\tableau    (image files from tableau)
+- assets              (executive summary, problem statement)
 
-# Summary
-A. Notebooks
+B. Notebooks (8 of them) 
+1. 1_data_extraction.ipynb
+- initial processing of data 
 
-I have created 4 notebooks 
-1. capstone_data for processing initial data (100% completed)
-- data for hdb flat resale transactions from 2015 to 2020 collected
-- data for macroeconomic factors, supply and demand collected
-- data for points of interest collected
-- fetched all necessary geocodes
+2. 2_eda.ipynb
+- EDA
+- visualization
 
-2. capstone_eda for visualization
-- plotted for macroecnomic factors
-- more visualizations to be added
+3. 3_map.ipynb
+- map of flats and points of interest
+- need a separate notebook because it runs in separate environment
 
-3. capstone_feature_engineering
-- added macroeconomic factors as features (completed)
-- added distances from points of interest as features (completed)
+4. 4_geocoding.ipynb
+- convert physical addresses to geocodes
 
-The dataset has 89 columns
+5. 5_feature_engineering.ipynb
+- calculate distances between flats and points of interest
+- combine all features together (flats, distances, macro data)
 
-4. capstone_modeling for modeling
-- facing some problems with the keras due to tensorflow (moving to colab to try out)
+6. 6_preprocessing.ipynb
+- Remove non-numeric features
+- Remove highly correlated features
+- Check for for Homoscedasticity, skewness and outliers
 
+7. 7_keras.ipynb
+- evaluate keras neutral network
 
-B. File Directories for datasets
-1. datasets/input
-- raw data files
+8. 8_xgboost.ipynb
+- evaluate XGBoost 
 
-2. datasets/output folder
-- for processed data files after cleaning
+C. Data files
+There are many data files because
+- data came from many sources
+- data processed at various stages were saved
 
-3. datasets/final
-- for datasets with features added
-- due to github's file size limitation the combined file has been uploaded in zip format
+Due to the file sizes, I uploadded them to gogole drive at https://drive.google.com/drive/folders/1_hZysJMyDKO7xDfXbwwFsT31HYWmBy6_
 
-C. Outstanding Issues
-- keras/tensorflow problem (moving to colab to try out)
+D. Deployed Price Predictor
+https://hdbprice.herokuapp.com/
+
 
